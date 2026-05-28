@@ -41,7 +41,7 @@ def call_openai(
 
     client = OpenAI(
         base_url="https://openrouter.ai/api/v1",
-        api_key="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",
+        api_key=os.getenv("OPENROUTER_API_KEY"),
     )
 
     start = time.perf_counter()
